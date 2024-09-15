@@ -1,5 +1,7 @@
-package com.example.bookstorage;
+package com.example.bookstorage.book;
 
+import com.example.bookstorage.author.Author;
+import com.example.bookstorage.author.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;

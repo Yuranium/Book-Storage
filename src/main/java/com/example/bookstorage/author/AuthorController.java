@@ -1,4 +1,4 @@
-package com.example.bookstorage;
+package com.example.bookstorage.author;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;

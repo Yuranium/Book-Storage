@@ -1,5 +1,6 @@
-package com.example.bookstorage;
+package com.example.bookstorage.book;
 
+import com.example.bookstorage.author.Author;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

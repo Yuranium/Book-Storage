@@ -1,4 +1,4 @@
-package com.example.bookstorage;
+package com.example.bookstorage.book;
 
 public enum BookGenre
 {
