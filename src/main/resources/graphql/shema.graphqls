@@ -1,0 +1,53 @@
+type Query
+{
+    authors: [Author!]!
+    authorById(id: ID!): Author
+    books: [Book!]
+    bookById(id: ID!): Book
+}
+
+type Author
+{
+    id: ID!
+    name: String!
+    surname: String!
+    middleName: String
+    birthdayDate: String!
+    books: [Book!]
+}
+
+type Book
+{
+    id: ID!
+    name: String!
+    pageCount: Int!
+    genre: String!
+}
+
+type Mutation
+{
+    addAuthor(author: AuthorInput): Author
+    addBook(book: BookInput): Book
+}
+
+input AuthorInput
+{
+    name: String!
+    surname: String!
+    middleName: String
+    birthdayDate: String!
+}
+
+input BookInput
+{
+    name: String!
+    pageCount: Int!
+    genre: BookGenre!
+    authorId: ID!
+}
+
+enum BookGenre
+{
+    COMPUTER_SCIENCE, PROGRAMMING, SOFTWARE_ENGINEERING, HISTORICAL_FICTION,
+    ROMANCE, PSYCHOLOGICAL_FICTION, MODERNIST_LITERATURE, MAGICAL_REALISM
+}
